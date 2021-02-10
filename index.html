@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SMDkoubou - SMD工房</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SMD工房で販売しているキットの取扱説明サイトです。">
+    <meta name="keywords" content="ドリームキャスト,Dreamcast,ビジュアルメモリ,Visual Memory,VM,ゲームギア,game gear,メガドラ,mega drive,nes,ファミコン,自作">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./smd.ico">
+    <script src="./js/openclose.js"></script>
+    <script src="./js/fixmenu_pagetop.js"></script>
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1 id="logo"><br>
+        </h1>
+        <h1 style="height: 96px;"><font size="140" color="#ED8432">SMD 工房</font></h1>
+        <aside id="header-img"><img src="./images/rogoK4.png" alt=""></aside>
+      </header>
+      <!--PC用（901px以上端末）メニュー-->
+      <nav id="menubar">
+        <ul>
+          <li class="current"><a href="./index.html">VMCとは</a></li>
+          <li><a href="./assembly.html">組み立て方</a></li>
+          <li><a href="./howto.html">操作方法</a></li>
+          <li><a href="./download.html">ダウンロード方法</a></li>
+          <li><a href="./firmware.html">ファームウェア</a></li>
+        </ul>
+      </nav>
+      <!--小さな端末用（900px以下端末）メニュー-->
+      <nav id="menubar-s">
+        <ul>
+          <li><a href="./index.html">VMCとは</a></li>
+          <li><a href="./assembly.html">組み立て方</a></li>
+          <li><a href="./howto.html">操作方法</a></li>
+          <li><a href="./download.html">ダウンロード方法</a></li>
+          <li><a href="./firmware.html">ファームウェア</a></li>
+        </ul>
+      </nav>
+      <!--スライドショー-->
+      <aside id="mainimg"> <img src="./images/1.jpg" alt="" class="slide0"> <img
+
+          src="./images/1.jpg" alt="" class="slide1"> </aside>
+      <p></p>
+      <div id="contents">
+        <div id="main">
+          <section>
+            <h3>VMCとは</h3>
+            <p>Visual Memory筐体に、第6世代iPod nanoを入れ、MP3プレーヤーにしている方がいらっしゃいました。<br>
+              せっかくなので、MP3プレイヤーだけでなく、ゲームもできた方が楽しいですよね？<br>
+              というコンセプトでVisual MemoryのConsoleということで制作しました。略してVMCと呼んでおります。<br>
+              イベントにてVMCを公開したところ、多くの方から、「自分も遊びたいので売ってほしい」<br>
+              という声をいただき、キットの形で販売することにいたしました。</p>
+            <h3>スペック</h3>
+            <p>CPU : STM32H747&nbsp; Cortex-M7 480MHz、Cortex-M4 240MHz Dual Core
+              、Flash ROM 2M、RAM 1MB</p>
+            <p>RAM : W9825G6KH-6I 133MHz/CL2 SDRAM 32MB</p>
+            <p>Display : H163QLN01 1.63inch 320x320 有機EL</p>
+            <p>DAC : ALC5628&nbsp; I2S Stereo DAC、45mW Headphone AMP、 2.4W
+              Speaker AMP</p>
+            <h3>使用上の注意</h3>
+            <ul class="disc">
+              <li>このHW/SWはSEGA社、任天堂社のライセンス製品ではありません</li>
+              <li>使用するデータによっては正常に動作しない可能性があります</li>
+              <li>この機器の使用により不具合が生じても、当方では一切その責任を負いかねます</li>
+            </ul>
+          </section>
+          <section>
+            <h3>紹介動画</h3>
+            <br>
+            <p> <iframe src="https://www.youtube.com/embed/dADBmJMabl4"
+
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+
+                allowfullscreen="" height="315" frameborder="0" width="560"></iframe>
+            </p>
+            <br>
+          </section>
+          <section id="new">
+            <h3>更新情報・お知らせ</h3>
+            <dl>
+              <dt>2021/02/11</dt>
+              <dd>InitialIssue</dd>
+            </dl>
+          </section>
+        </div>
+        <!--/main--> </div>
+      <!--/contents--> </div>
+    <!--/container-->
+    <footer> <small>Copyright© <a href="https://twitter.com/SMD_Koubou">SMD_Koubou</a>
+        All Rights Reserved.</small> <span class="pr"><a href="https://template-party.com/"
+
+          target="_blank">《Web Design:Template-Party》</a></span> </footer>
+    <p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+    <!--メニュー開閉ボタン-->
+    <div id="menubar_hdr" class="close"></div>
+    <!--メニューの開閉処理条件設定　900px以下-->
+    <script>
+if (OCwindowWidth() <= 900) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+  </body>
+</html>
