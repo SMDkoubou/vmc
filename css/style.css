@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* ★セガカラー #ED8432*/
+/* ★ #ED8432*/
 
 
 /*slide.cssと、lightbox.cssの読み込み
@@ -19,18 +19,33 @@ body {
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	font-size: 14px;	/*文字サイズ*/
 	line-height: 2;		/*行間*/
-	background:  #FFFFE0;/*#313131;	/*全体の背景色（古いブラウザ用）*/
+	background:  #FFFFE0;/*全体の背景色（古いブラウザ用）*/
 	-webkit-text-size-adjust: none;
 }
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form,input,select,textarea {margin: 0px;padding: 0px;font-size: 100%;}
 ul {list-style-type: none;}
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
-video {max-width: 100%;}
-iframe /*{width: 100%;}*/
+/*video {max-width: 100%;}
+iframe {
   border: none;
-  width: 315px;
-  height: 560px
+  width: 560px;
+  height: 315px;
+}*/
+/* --YouTubeサイズ調整-- */
+.video {
+position: relative;
+height: 0;
+padding: 30px 0 56.25%;
+overflow: hidden;
+}
+
+.video iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }
 
 /*リンク（全般）設定
@@ -88,8 +103,8 @@ header #logo img {
 /*メニューブロック*/
 #menubar {
 	overflow: hidden;
-	background: #ED8432;/*#FFF;	/*背景色（古いブラウザ用）*/
-/*	background: linear-gradient(#ED8432,#FFFFFF);  /*(#FFF, #e5e5e5);	/*背景グラデーション*/
+	background: #ED8432;	/*背景色（古いブラウザ用）*/
+/*	background: linear-gradient(#ED8432,#FFFFFF);  /*背景グラデーション*/
 	border-radius: 10px;	/*角丸のサイズ*/
 	text-align: center;		/*テキストをセンタリング*/
 	padding: 0 4%;			/*上下、左右へのメニューブロック内の余白。*/
@@ -107,7 +122,7 @@ header #logo img {
 	display:  block;text-decoration: none;
 	border-right: 1px solid #ccc;	/*右側の線の幅・線種・色*/
 	padding: 25px 0;	/*上下、左右へのメニュー内の余白*/
-	color: #FFFFFF;/*#333;		/*文字色*/
+	color: #FFFFFF;/*文字色*/
 	font-size: 16px;
 }
 /*１つ目のメニューへの追加設定*/
@@ -116,8 +131,8 @@ header #logo img {
 }
 /*マウスオン時と、現在表示中メニューの設定*/
 #menubar li a:hover, #menubar li.current a {
-	background: #EA5505;/*#f13a7f;	/*背景色*/
-	color: #FFFFFF;/*#fff;			/*も地色*/
+	background: #EA5505;/*背景色*/
+	color: #FFFFFF;/* 文字色*/
 }
 /*スマホ用メニューを表示させない*/
 #menubar-s {display: none;}
@@ -132,7 +147,7 @@ header #logo img {
 	margin-bottom: 20px;	/*見出しの下にとるスペース*/
 	font-size: 16px;		/*文字サイズ*/
 	padding: 12px 30px;		/*上下、左右への余白*/
-	color: #FFFFFF;/*#333;			/*文字色*/
+	color: #FFFFFF;			/*文字色*/
 	border-radius: 10px;	/*角丸のサイズ*/
 	background: #ED8432;/*#FFF;		/*背景色（古いブラウザ用）*/
 	/*background: linear-gradient(#FFF, #e5e5e5);	/*背景グラデーション(★グラデーションなくした)*/
@@ -145,7 +160,7 @@ header #logo img {
 	padding: 10px 30px;		/*上下、左右への余白*/
 	color:#FFFFFF;  /*文字色*/
 	border-radius: 10px;	/*角丸のサイズ*/
-	background: #ED8432   /*#000;		/*背景色（古いブラウザ用）*/
+	background: #ED8432   /*背景色（古いブラウザ用）*/
 /*	background: linear-gradient(#222, #000);	/*背景グラデーション*/
 }
 /*段落タグ設定*/
@@ -300,11 +315,11 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
 	right: 1%;			/*ウィンドウの右から1%の場所に配置*/
 	color:#FFFFFF;/*文字色*/
 	border-radius: 50%;	/*角丸指定。50%にすると円形になる。四角形がいいならこの１行削除。*/
-	background: #ED8432;/*f13a7f;	/*背景色*/
+	background: #ED8432;/*背景色*/
 }
 /*マウスオン時の背景色*/
 body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
-	background: #EA5505;/*#fff;*/
+	background: #EA5505;
 	color: #FFFFFF;
 }
 
@@ -417,17 +432,22 @@ header #logo img {
 /*アイコン共通設定*/
 #menubar_hdr.close,
 #menubar_hdr.open {
-	width: 50px;	/*幅*/
-	height: 50px;	/*高さ*/
-	border-radius: 50%;
+	text-align:center;/* 左右の中央 */
+	width: 50px;    /*幅*/
+	height: 50px;   /*高さ*/
+	line-height:50px;
+	border-radius:50%;
+	color:#FFFFFF;  /*文字色*/
+	font-size: 14px;/*文字サイズ*/
+
 }
 /*三本バーアイコン*/
 #menubar_hdr.close {
-	background: #f13a7f url(../images/icon_menu.png) no-repeat center top/50px;
+	background: #ED8432/*#f13a7f*/ url(../images/icon_menu.png) no-repeat center top/50px;
 }
 /*閉じるアイコン*/
 #menubar_hdr.open {
-	background: #f13a7f url(../images/icon_menu.png) no-repeat center bottom/50px;
+	background: #EA5505/*#f13a7f*/ url(../images/icon_menu.png) no-repeat center bottom/50px;
 }
 
 /*Galleryページのサムネイル
