@@ -47,9 +47,11 @@
           <section>
             <h2>緊急告知!</h2>
             <p><b><span style="color: red;">お買い上げいただいたVMCですが、USBへの電源ON/OFFを繰り返して
-                  いるとPMICが壊 れて電源が入らなくなる可能性が判明しました。</span></b><br>
-              <b><span style="color: red;">そうなる前に、事前に原因となる下記のICを除去してください。このICを除去
-                  しても動作には影響ありません。</span></b><br>
+                  いるとPMICが壊れて電源が入らなくなる可能性が判明しました。<br>
+                  <u>★PMIC破損時に非常に高温になる場合がございます。怪我、火災などに十分ご注意ください★</u></span></b><br>
+              <b><span style="color: red;">事前に原因となる下記のICを除去をお願いいたします。このICを除去してもVMCの動作には影響ありません。<br>
+                  誠に申し訳ございません。</span></b><br>
+              <br>
               <b><span style="color: red;">対象となるのは表面U2という表記のあるIC(下記の赤丸)です。</span></b><br>
               <img src="images/R0010963s.jpg" alt="U2を除去する"></p>
             <p><b><span style="color: red;">ICの足を精密ニッパーで切るのが簡単です</span></b><br>
@@ -64,19 +66,17 @@
               ゲートICです。<br>
               将来、ファームウェアアップで、外付けのJoyStickなどからVMCを制御できるようにする予定でした。<br>
               しかし、何らかの影響でこのICが破損するとゲートの機能が果たせなくなり、電源がループします。その結果、PMICが破損します。<br>
-              そのため、今回はOTG対応は諦めて安全側に倒すことにいたします。真に申し訳ありません。 </p>
+              そのため、今回はOTG対応は諦めて安全側に倒すことにいたします。誠に申し訳ございません。 </p>
             <h3>VMCとは</h3>
             <p>Visual Memory筐体に、第6世代iPod nanoを入れ、MP3プレーヤーにしている方がいらっしゃいました。<br>
               せっかくなので、MP3プレイヤーだけでなく、ゲームもできた方が楽しいですよね？<br>
               というコンセプトでVisual MemoryのConsoleということで制作しました。略してVMCと呼んでおります。<br>
               イベントにてVMCを公開したところ、多くの方から、「自分も遊びたいので売ってほしい」<br>
               という声をいただき、キットの形で販売することにいたしました。</p>
-      <!--スライドショー-->
-      <aside id="mainimg"> <img src="./images/1.jpg" alt="" class="slide0"> <img
-
-          src="./images/1.jpg" alt="" class="slide1"> </aside>
-      <p></p>
-
+            <!--スライドショー-->
+            <aside id="mainimg"> <img src="./images/1.jpg" alt="" class="slide0">
+              <img src="./images/1.jpg" alt="" class="slide1"> </aside>
+            <p></p>
             <h3>スペック</h3>
             <p>CPU : STM32H747&nbsp; Cortex-M7 480MHz、Cortex-M4 240MHz Dual Core
               、Flash ROM 2M、RAM 1MB<br>
