@@ -149,7 +149,7 @@ header #logo img {
 	padding: 12px 30px;		/*上下、左右への余白*/
 	color: #FFFFFF;			/*文字色*/
 	border-radius: 10px;	/*角丸のサイズ*/
-	background: #ED8432;/*#FFF;		/*背景色（古いブラウザ用）*/
+	background: #FF0000;/*背景色（古いブラウザ用）*/
 	/*background: linear-gradient(#FFF, #e5e5e5);	/*背景グラデーション(★グラデーションなくした)*/
 }
 /*mainコンテンツのh3タグの設定*/
