@@ -114,7 +114,7 @@ header #logo img {
 #menubar li {
 	overflow: hidden;
 	float: left;		/*左に回り込み*/
-	width: 20%;			/*メニュー幅。4個なので100÷5=20。6個にしたいなら16.6%にする。*/
+	width: 16.6%;			/*メニュー幅。4個なので100÷5=20。6個にしたいなら16.6%にする。*/
 	line-height: 1.6;	/*行間*/
 	background: #ED8432;
 }
