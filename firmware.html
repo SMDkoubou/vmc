@@ -89,7 +89,22 @@
               拡張子が.pceがHuCard、.cueがCD-ROM<sup>2</sup>になります。CD-ROM<sup>2</sup>は
               cueシートから実体のイメージを参照しますので、イメージも 置いてください。 <br>
               CD-ROM<sup>2</sup>対応はβ版です。動作しないソフトや、読み込み時の処理落ちなど制限事項があります。</p>
-            <p></p>
+            <h3>MSX Emulator<br>
+            </h3>
+            <p>MSXを動作させるファームウェアです。下記からダウンロードしてください。 </p>
+            <p><a href="firmware/VMCSTMH7_MSX.zip">MSX Emulator Firmware</a></p>
+            <p>MSXを起動するにはMSX2J.ROM、MSX2JEXT.ROMが必要です。FM音源を鳴らす場合はFMPAC.ROM、ディスク対応
+              の場合 はDISK.ROMが必要です。<br>
+              それぞれSDカードのルートに置いてください。<br>
+              (ファイル属性を隠しファイルに変更しておくと、ファイル一覧から見えなくなりますのでお勧めです) </p>
+            <p>システムメニューはKEY CONFIGの設定を追加しています。<br>
+              <img src="images/R0011008s.jpg" alt="MSX SystemMenu" style="width: 257px; height: 263px;"></p>
+            <p>KEY
+              CONFIGにカーソルを合わせて、変更したいキーを押すとハイライトが移動しますので、その状態で左右キーを押すと変更できます。<br>
+              A、Bはそのままの意味ですが、SはSLEEP、MはMODEという意味です。(ボタンの位置と表示位置を合わせてあります)</p>
+            <p>RESETは左右キーでMSXのモードを変えられますが、MSX2でしか動作確認していません。<br>
+              とりあえずfMSXと同じ名前のROMを置いておけば各モードでは動作します。</p>
+            <p>動作中のディスク交換はFILE SELECTから行ってください。</p>
             <h3>MDX Player</h3>
             <p>MDX Playerを動作させるファームウェアです。下記からダウンロードしてください。<br>
               <a href="firmware/VMCSTMH7_MDX.zip">MDX Player Firmware</a><br>
@@ -108,8 +123,7 @@
       <!--/contents--> </div>
     <!--/container-->
     <footer> <small>Copyright© <a href="https://twitter.com/SMD_Koubou">SMD_Koubou</a>
-        All Rights Reserved.</small> <span class="pr"><a href="https://template-party.com/"
-
+        All Rights Reserved.</small> <span class="pr"><a href="https://template-party.com/"
           target="_blank">《Web Design:Template-Party》</a></span> </footer>
     <p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
     <!--メニュー開閉ボタン-->
@@ -119,6 +133,5 @@
 if (OCwindowWidth() <= 900) {
 	open_close("menubar_hdr", "menubar-s");
 }
-</script>
-  </body>
+</script> </body>
 </html>
