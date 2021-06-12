@@ -78,7 +78,7 @@ header {
 }
 /*ロゴ画像*/
 header #logo img {
-	width: 250px;		/*画像の幅*/
+	width: 200px;		/*画像の幅*/
 	position: absolute;z-index: 2;
 	left: 1%;		/*左から3%の場所に配置*/
 	top: 8px;		/*上から75pxの場所に配置*/
@@ -88,7 +88,7 @@ header #logo img {
 	position: absolute;z-index: 1;
 	right: 3%;		/*右から3%の場所に配置*/
 	top: 0px;		/*上から-30pxの場所に配置。基準の場所から上に移動する事になります。*/
-	width: 250px;	/*画像の幅*/
+	width: 200px;	/*画像の幅*/
 }
 
 /*コンテンツ（メインメニューとmainとsubを囲むブロック）
@@ -385,7 +385,7 @@ img.fl {float: left;margin-right: 10px;margin-bottom: 10px;width: 30%;}
 ---------------------------------------------------------------------------*/
 /*ロゴ画像*/
 header #logo img {
-	width: 250px;	/*画像の幅*/
+	width: 200px;	/*画像の幅*/
 	left: 0px;		/*左から0pxの場所に配置*/
 	top: 80px;		/*上から85pxの場所に配置*/
 }
